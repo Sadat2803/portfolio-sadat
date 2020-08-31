@@ -1,4 +1,4 @@
-// 
+//
 
 (function($,sr) {
   // debouncing function from John Hann
@@ -20,7 +20,7 @@
     }
     ;
   }
-  // smartresize 
+  // smartresize
   jQuery.fn[sr] = function(fn) {
     return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr);
   }
@@ -45,7 +45,7 @@ $(function() {
     // Smooth Scrolling and remove Hash tag from link
 
     $('a[href*=#]:not([href=#])').click(function() {
-       
+
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -53,7 +53,7 @@ $(function() {
                 $('html,body').animate({
                     scrollTop: target.offset().top
                 }, 1000, function(){
-                  
+
                 });
                 return false;
             }
@@ -78,7 +78,7 @@ $(function() {
         setHomeBannerHeight();
         centerHomeBannerText();
     });
-    
+
 });
 
 
@@ -126,7 +126,7 @@ $( function() {
     var sortByValue = $(this).attr('data-sort-by');
     $container.isotope({ sortBy: sortByValue });
   });
-  
+
   // change is-checked class on buttons
   $('.button-group').each( function( i, buttonGroup ) {
     var $buttonGroup = $( buttonGroup );
@@ -136,7 +136,7 @@ $( function() {
     });
   });
 
-  
+
 });
 
 function countUpTo(count,selector,max)
@@ -186,7 +186,7 @@ function countUpTo(count,selector,max)
                       text = curr_count;
                     }
                 }
-               
+
                 $display.text(text);
             } else {
                 clearInterval(int);
@@ -207,7 +207,7 @@ $(document).scroll(function(event) {
 
       if(firstTime){
         firstTime = false;
-            
+
           var count1 = $('.count1'),
             count2 = $('.count2'),
             count3 = $('.count3'),
