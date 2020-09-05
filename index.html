@@ -6,6 +6,8 @@
     	<!-- meta -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- MDB -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
 
         <!-- stylesheet -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,6 +16,8 @@
     		<link rel="stylesheet" href="css/owl.theme.min.css">
         <link rel="stylesheet" href="css/animate.css">
     		<link rel="stylesheet" href="css/main.css">
+        <!--Animate Css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 
 		<!-- google font -->
         <link href='https://fonts.googleapis.com/css?family=Oswald:300,400' rel='stylesheet'>
@@ -23,9 +27,18 @@
         <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+        <link href="css/flag.min.css" rel="stylesheet">
+
+        <!--AOS-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     </head>
     <body>
-        <div class="content-block" id="header">
+      <button type="button" onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary text-center">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+        <div  class="content-block" id="header">
             <div id="overlay-1">
                 <header id="site-header" class="clearfix">
                     <div class="pull-left">
@@ -54,7 +67,7 @@
                     </div>
                 </header>	<!-- site-header -->
 
-                <div class="middle text-center clearfix">
+                <div class="middle text-center clearfix animate__animated animate__bounceInDown">
                     <div class="container">
                         <h1 class="pro-name">Sadat <!-- <span style="color: #71b644;" > -->Islam<!-- </span> --></h1>
                         <h3 class="pro-small">Web developer</h3>
@@ -68,10 +81,106 @@
                 </div>
             </div>  <!-- overlay-1 -->
         </div>  <!-- content-block -->
+        <hr class="my-5" >
 
-        <div class="content-block text-center" id="portfolio">
+  <section  class="text-center" data-aos-duration="1000" data-aos="fade-left" >
+    <h3 id="aboutmeTitle" class="my-5 ">
+      <strong>About me</strong>
+    </h3>
+    <div class="row">
+      <div class="col-md-6">
+        <img id="profilePicture" src="img/profile.jpg" class="rounded-circle shadow-1-strong mb-4" height="250" alt="">
+        <p><strong>Who's this guy ?</strong></p>
+        <p>
+          I'm Islam, from Algiers,Algeria <i class="algeria flag"></i>
+          <br>
+          Computer Science Student at UMMTO College
+          <br>
+          UI/UX Designer and Front-end Developer
+          <br>
+          Full-Stack Web Developer in future ...
+        </p>
+        <!-- Facebook
+        <a style="color: #3b5998;" href="#!" role="button"><i class="mx-2 fab fa-facebook-f fa-lg"></i></a>
+-->
+        <!-- Twitter -->
+        <a style="color: #55acee;" href="https://www.linkedin.com/in/adnooruxuidev/" role="button" target="_blank"><i id="lkd" class="mx-2 fab fa-linkedin"></i></a>
+
+        <!-- Google -->
+        <a style="color: #dd4b39;" href="https://github.com/AbdennourKd" role="button" target="_blank"><i class="mx-2 fab fa-github-square fa-lg"></i></a>
+
+        <!-- Instagram -->
+        <a style="color: #ac2bac;" href="https://www.instagram.com/ak_coder.ui/" role="button" target="_blank"><i class="mx-2 fab fa-instagram fa-lg"></i></a>
+      </div>
+      <div class="col-md-6">
+        <!--<p><strong>Intermediate</strong></p>-->
+        <div class="row">
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4 ">
+            <i id="html" class="fab fa-html5 fa-3x "></i>
+            <p>HTML5</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="css" class="fab fa-css3-alt fa-3x "></i>
+            <p>CSS3</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4 text">
+            <i id="js" class="fab fa-js fa-3x "></i>
+            <p>JAVASCRIPT</p>
+          </div>
+        </div>
+        <!--<p><strong>Intermediate</strong></p>-->
+        <div class="row">
+          <div  style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="ang" class="fab fa-angular fa-3x"></i>
+            <p>ANGULAR</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="bts" class="fab fa-bootstrap fa-3x"></i>
+            <p>BOOTSTRAP</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="mdb" class="fab fa-mdb fa-3x"></i>
+            <p>MDB</p>
+          </div>
+        </div>
+        <!--<p><strong>Intermediate</strong></p>-->
+        <div class="row">
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="fig" class="fab fa-figma fa-3x"></i>
+            <p>FIGMA</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="gth" class="fab fa-github fa-3x"></i>
+            <p>GITHUB</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="git" class="fab fa-git-alt fa-3x"></i>
+            <p>GIT</p>
+          </div>
+        </div>
+        <!--<p><strong>Intermediate</strong></p>-->
+        <div class="row">
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="php" class="fab fa-php fa-3x"></i>
+            <p>PHP</p>
+          </div>
+          <div style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="wp" class="fab fa-wordpress fa-3x"></i>
+            <p>WORDPRESS</p>
+          </div>
+          <div  style="margin-bottom: 1.5rem" class="col-md-4 mb-4">
+            <i id="ps" class="fab fa-adobe fa-3x"></i>
+            <p>ADOBE PS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END OF SECTION ABOUTME-->
+    <hr class="my-5" >
+        <div class="content-block text-center" id="portfolio" data-aos-duration="1000" data-aos="flip-down">
             <header class="block-heading cleafix">
-                <h1>Latest work</h1>
+                <h1 id="lastestWorkTitle">Latest work</h1>
                 <!-- <p>Take a look at some of my recent products</p> -->
             </header>
 
@@ -151,7 +260,8 @@
             </a>
         </div>  <!-- content-block -->
     <!-- content-block -->
-        <div id="services" class="content-block">
+      <hr class="my-5" >
+        <div id="services" class="content-block" data-aos-duration="1000" data-aos="flip-left">
             <div id="numbers" class="parallax">
                 <div class="overlay">
                     <!-- title -->
@@ -187,7 +297,7 @@
             </div>
         </div>
 
-
+  <hr class="my-5">
         <div class="content-block" id="testimonials">
             <header class="block-heading cleafix text-center">
                 <h1>What colleagues say</h1>
@@ -229,7 +339,7 @@
                 </div>	<!-- container -->
             </div>	<!-- block-content -->
         </div>	<!-- content-block -->
-
+  <hr class="my-5" >
         <div class="content-block" id="contact">
             <div class="overlay-3">
                 <header class="block-heading cleafix text-center">
@@ -311,7 +421,10 @@
         <script src="js/jquery.isonscreen.js"></script>
 
         <script src="js/main.js"></script>
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script>
         	$(document).ready(function(){
   				$('.owl-carousel').owlCarousel({
