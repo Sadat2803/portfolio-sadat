@@ -43,13 +43,12 @@ Text Domain: developer
 	font-weight: 400;
 	src: local('Pacifico Regular'), local('Pacifico-Regular'), url("../fonts/pacifico.woff") format('woff');
 }
-html
-{
-	overflow-x: hidden;
-}
+
 html, body {
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
+
 }
 
 ::selection {
