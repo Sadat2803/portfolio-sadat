@@ -782,9 +782,20 @@ i.fa.fa-envelope-o {
 #bts{
     color: purple;
 }
-
-#mdb{
-    color: purple;
+#vuejs
+{
+	color : #42b883;
+}
+#java
+{
+	color : orange;
+}
+#slack
+{
+	color : red;
+}
+#python{
+    color: #4B8BBE;
 }
 
 #gth,#fig{
@@ -830,7 +841,14 @@ hr {
 }
 #profilePicture
 {
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2) ;border-radius:40%;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2) ;
+	border-radius:40%;
+	margin-bottom: 1.5rem;
+	color: #4f4f4f;
+}
+.text-center {
+    text-align: center!important;
+		font-family: 'Montserrat', sans-serif;
 }
 /* /////////////////////////////////////////////////////////////////////
 //  11 - Responsive styles
